@@ -2,6 +2,7 @@ import com.arpangroup.Employee;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class StreamTest {
@@ -9,7 +10,7 @@ public class StreamTest {
 
     @BeforeEach
     void init() {
-        employees = List.of(
+        employees = Arrays.asList(
                 new Employee(1, "Ram", "IT", 5000),
                 new Employee(2, "Shyam", "IT", 10000),
                 new Employee(3, "Laxman", "TESTING", 15000),
@@ -23,6 +24,7 @@ public class StreamTest {
 
     @Test
     public void test_sliceOfListUsingStream(){
+        System.out.println(employees);
     }
 
     @Test
